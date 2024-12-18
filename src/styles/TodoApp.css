@@ -1,0 +1,81 @@
+.TodoApp {
+  width: 500px;
+}
+
+@media (max-width: 600px) {
+  .TodoApp {
+    width: 90vw;
+  }
+}
+
+.TodoNav {
+  justify-content: space-between;
+}
+
+.TodoList,
+.TodoInput,
+.TodoFooter {
+  background-color: var(--list-bg-color);
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.TodoFooter,
+.TodoList {
+  box-shadow: 0 20px 20px var(--shadow-color);
+}
+
+.TodoList {
+  margin-block-start: 2rem;
+}
+
+.TodoInput,
+.TodoItem,
+.TodoFooter {
+  padding: 0.8rem 1rem;
+}
+
+.TodoItem {
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color);
+
+  > p {
+    color: var(--text-color);
+    width: 100%;
+    margin-left: 1rem;
+    text-transform: capitalize;
+  }
+}
+
+.TodoList,
+.TodoItem:last-child {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.TodoFooter {
+  justify-content: space-between;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  color: var(--footer-text-color);
+  font-weight: 100;
+
+  > button {
+    font-weight: inherit;
+  }
+}
+
+.CTA {
+  gap: 1rem;
+  font-weight: bold;
+}
+
+.CTA > button:hover,
+.TodoFooter > button:hover {
+  color: var(--hover-effect);
+}
+
+/* .CTA > button:active,
+.TodoFooter > button:active {
+  color: var(--primary-blue);
+} */
