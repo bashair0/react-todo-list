@@ -74,8 +74,3 @@
 .TodoFooter > button:hover {
   color: var(--hover-effect);
 }
-
-/* .CTA > button:active,
-.TodoFooter > button:active {
-  color: var(--primary-blue);
-} */
