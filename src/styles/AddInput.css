@@ -1,0 +1,14 @@
+.AddInput {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 100;
+  border: none;
+  outline: none;
+}
+
+.Form {
+  width: 100%;
+}
