@@ -1,0 +1,41 @@
+.CheckButton {
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+  background-color: transparent;
+  position: relative;
+}
+
+.CheckButton::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+}
+
+.CheckButton:hover::before {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background: var(--clr-bg-gradient) border-box;
+  mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+}
+
+.CheckButton:checked::before {
+  border-color: transparent;
+}
+
+.CheckButton:checked {
+  border-radius: 50%;
+  background-image: var(--clr-bg-gradient);
+  border: transparent;
+}
+
+.CheckButton:checked:after {
+  content: url(../assets/images/icon-check.svg);
+}
