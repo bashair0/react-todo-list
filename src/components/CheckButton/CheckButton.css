@@ -37,5 +37,5 @@
 }
 
 .CheckButton:checked:after {
-  content: url(../assets/images/icon-check.svg);
+  content: url(../../assets/images/icon-check.svg);
 }

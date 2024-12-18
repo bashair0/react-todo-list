@@ -1,4 +1,4 @@
-import "../styles/CheckButton.css";
+import "./CheckButton.css";
 
 export default function CheckButton({ checked, handleChange }) {
   return (

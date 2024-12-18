@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
-import "../styles/TodoApp.css";
+import "./TodoApp.css";
 import { v4 as uuid } from "uuid";
-import sun from "../assets/images/icon-sun.svg";
-import moon from "../assets/images/icon-moon.svg";
-import del from "../assets/images/icon-cross.svg";
+import sun from "../../assets/images/icon-sun.svg";
+import moon from "../../assets/images/icon-moon.svg";
+import del from "../../assets/images/icon-cross.svg";
 
-import Header from "./Header";
-import AddInput from "./AddInput";
-import CheckButton from "./CheckButton";
-import LeftItems from "./LeftItems";
+import Header from "../Header/Header";
+import AddInput from "../AddInput/AddInput";
+import CheckButton from "../CheckButton/CheckButton";
+import LeftItems from "../LeftItems/LeftItems";
 
 export default function Todo() {
   const [lightTheme, setLightTheme] = useState(false);
