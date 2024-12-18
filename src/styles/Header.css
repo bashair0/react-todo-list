@@ -1,0 +1,8 @@
+.Header {
+  margin-block: 2.5rem 2rem;
+  color: var(--light-grey);
+  font-size: 1.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
