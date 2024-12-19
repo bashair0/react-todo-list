@@ -119,7 +119,10 @@ export default function Todo() {
           </div>
           <div className="TodoList">
             {filteredTodos.map((todo) => (
-              <div key={todo.id} className="TodoItem flex">
+              <div
+                key={todo.id}
+                className="TodoItem flex"
+                data-testid="todo-list">
                 <CheckButton
                   checked={todo.completed}
                   style={{
@@ -128,14 +131,7 @@ export default function Todo() {
                       : "none",
                   }}
                   handleChange={() => handleChecked(todo.id)}></CheckButton>
-                <p
-                  style={{
-                    textDecoration: todo.completed ? "line-through" : "none",
-                    color: todo.completed
-                      ? "var(--completed-text-color)"
-                      : "var(--text-color)",
-                  }}
-                  key={todo.id}>
+                <p className={todo.completed && "active"} key={todo.id}>
                   {todo.todo}
                 </p>
                 <button type="button" onClick={() => handleDeletion(todo.id)}>

@@ -19,7 +19,11 @@ export default function AddInput({ addTodo }) {
     setInputData({ todo: "" });
   };
   return (
-    <form action="post" onSubmit={handleSubmit} className="Form">
+    <form
+      data-testId="form"
+      action="post"
+      onSubmit={handleSubmit}
+      className="Form">
       <input
         className="AddInput"
         type="text"

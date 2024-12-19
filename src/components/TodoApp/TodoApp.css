@@ -45,6 +45,11 @@
     margin-left: 1rem;
     text-transform: capitalize;
   }
+
+  > p.active {
+    text-decoration: line-through;
+    color: var(--completed-text-color);
+  }
 }
 
 .TodoList,
