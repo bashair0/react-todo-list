@@ -135,7 +135,14 @@ export default function Todo() {
                   {todo.todo}
                 </p>
                 <button type="button" onClick={() => handleDeletion(todo.id)}>
-                  <img src={del} />
+                  <img
+                    src={del}
+                    className={
+                      windowWidth < "600"
+                        ? "delIcon showDeleteIcon"
+                        : "delIcon hideDeleteIcon"
+                    }
+                  />
                 </button>
               </div>
             ))}

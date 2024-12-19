@@ -52,6 +52,18 @@
   }
 }
 
+.TodoItem:hover .delIcon {
+  display: block;
+}
+
+.showDeleteIcon {
+  display: block;
+}
+
+.hideDeleteIcon {
+  display: none;
+}
+
 .TodoList,
 .TodoItem:last-child {
   border-bottom-left-radius: 0;
