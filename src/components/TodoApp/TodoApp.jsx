@@ -27,7 +27,6 @@ export default function Todo() {
   const [filter, setFilter] = useState("all");
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  // Handles
   const handleWindowResize = () => setWindowWidth(window.innerWidth);
 
   const handleFilter = (filterType) => setFilter(filterType);
